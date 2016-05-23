@@ -6,7 +6,7 @@
 ob_clean();
 $filename = str_replace(" ", "", $_POST['mName']);
 $filename = iconv("UTF-8","GB2312",$filename);
-$filepath = "E:/PHPworkspace/uplodeFile/". $filename;
+$filepath = "E:/PHPworkspace/uplodeShare/". $filename;
 //判断文件是否存在
 if(!file_exists($filepath)){
 	echo "Error：文件不存在";
